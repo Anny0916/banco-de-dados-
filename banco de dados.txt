@@ -9,7 +9,7 @@ CREATE TABLE produtos (
 INSERT INTO produtos (produto_id, nome_produto, categoria, preco, estoque_inicial)
 VALUES 
 (1, 'Camiseta Polo', 'Vestuário', 75.50, 100),
-(2, 'Notebook Ultra', 'Eletrônicos', 2999.99, 20);
+(2, 'Notebook Ultra', 'Eletrônicos', 2999.99, 20),
 (3, 'Tênis Esportivo', 'Vestuário', 199.90, 50),
 (4, 'Fone de Ouvido Bluetooth', 'Eletrônicos', 89.99, 150),
 (5, 'Cafeteira Elétrica', 'Eletrodomésticos', 249.95, 30),
@@ -19,5 +19,18 @@ VALUES
 
 create table Vendas(
   venda_id integer PRIMARY KEY,
-   data_venda DATE,
+   data_venda DATE, 
    valor_total REAL);
+
+INSERT INTO Vendas (venda_id , data_venda , valor_total)
+VALUES
+(3,'2026-01-23',1780.21),
+(1,'2026-01-23',2468.32),
+(5,'2026-01-23',1498.23),
+(4,'2026-01-23',3726.34),
+(7,'2026-01-23',7264.32),
+(6,'2026-01-23',8274.99),
+(9,'2026-01-23',8374.33),
+(2,'2026-01-23',8374.22),
+(8,'2026-01-23',8475.88);
+
